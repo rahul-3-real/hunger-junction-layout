@@ -1,0 +1,21 @@
+:root{
+	/* Font Family */
+	--poppins:'Poppins', sans-serif;
+	--lobster:'Lobster', cursive;
+	--dancing-script:'Dancing Script', cursive;
+	--chelsea-market:'Chelsea Market', cursive;
+
+	/* Colors */
+	--main:#cd0042;
+	--light:#ffffff;
+	--dark:#0f1221;
+
+	/* Spacing */
+	--mtb50:50px 0;
+	--mtb70:70px 0;
+	--mtb100:100px 0;
+
+	--ptb50:50px 0;
+	--ptb70:70px 0;
+	--ptb100:100px 0;
+}

@@ -1,0 +1,195 @@
+/* Variables */
+@import url('variables.css');
+
+html{scroll-behavior:smooth;}
+*{margin:0; padding:0; list-style:none; text-decoration:none; border:none; outline:none;}
+a:hover{text-decoration:none;}
+*::selection{background:var(--dark); color:var(--light);}
+body{margin:0; padding:0; box-sizing:border-box; font-family:var(--poppins);}
+
+
+
+/* Header */
+header{width:100%; background:var(--main); font-size:15px; font-weight:400; padding:5px !important;}
+header .social a{display:inline-block; margin-right:15px; color:var(--light);}
+header ul{margin:0; padding:0; text-align:right;}
+header ul li{display:inline-block; border-left:1px solid #fff5; padding:0 15px;}
+header ul li:last-child{border-right:1px solid #fff5}
+header ul li a{color:var(--light); transition:.5s;}
+header ul li a:hover{color:var(--light); text-decoration:none;}
+header ul li .dropdown-menu{background:var(--light);}
+header ul li .dropdown-item{color:var(--dark); font-size:15px; font-weight:400;}
+/* Header ~ Close */
+
+/* Navbar */
+.navBar{width:100%; padding:20px 0; box-shadow:0 5px 5px 5px #0001; position:sticky; top:0; z-index:9; background:var(--light); transition:.5s;}
+.stickyNavBar{padding:10px 0 !important;}
+nav .logo h1{font-size:30px; font-family:var(--lobster); color:var(--main);}
+nav ul{margin:0; padding:0;}
+nav ul li{display:inline-block; line-height:40px; margin-right:20px; font-size:15px; font-weight:500;}
+nav ul li a{color:var(--main); transition:.5s;}
+nav ul li a:hover{color:var(--main);}
+nav ul button{background:none; border:none; outline:none !important; color:var(--main); margin-left:30px;}
+/* Navbar ~ Close */
+
+/* Footer */
+footer{padding:var(--ptb70); background:var(--dark);}
+footer h4{color:var(--light); font-size:20px; font-weight:500; text-transform:capitalize;}
+footer .divider{width:100%; background:#fff5; height:1px; margin:20px 0 50px;}
+footer .divider:after{content:''; width:75px; height:3px; background:var(--main); position:relative; left:0; top:-1px; display:block;}
+footer p{color:var(--light); font-size:15px; font-weight:200;}
+footer form{width:100%; margin-top:15px;}
+footer form input{width:100%; padding:7px 10px; border-radius:2px; background:var(--light); margin:0 0 5px; font-size:15px; font-weight:200;}
+footer form button{padding:10px 20px; background:var(--main); color:var(--light); border-radius:2px; font-size:15px; font-weight:200;}
+footer ul{font-size:15px; font-weight:200;}
+footer ul li{display:block; border-bottom:1px solid #fff3; padding:7px 0; color:var(--main);}
+footer ul li:last-child{border:none;}
+footer ul li a{color:var(--light); transition:.5s;}
+footer ul li a:hover{color:var(--main); text-decoration:none;}
+footer ul li span{float:right; font-weight:400;}
+footer .social{display:inline-block; margin-top:20px;}
+footer .social a{display:inline-block; width:40px; height:40px; text-align:center; line-height:40px; background:var(--main); color:var(--light); margin-right:10px; border-radius:2px;}
+footer .box{display:inline-flex; margin-bottom:15px;}
+footer .box:last-child{margin-bottom:0px;}
+footer .box .image{width:100px; overflow:hidden; border-radius:2px;}
+footer .box .image img{width:100%;}
+footer .box .text{margin-left:10px; padding-top:7px;}
+footer .box .text h5{font-size:15px; font-weight:500;}
+footer .box .text h5 a{color:var(--light); transition:.5s;}
+footer .box .text h5 a:hover{color:var(--main); text-decoration:none;}
+footer .box .text p{font-size:13px; font-weight:200;}
+.bottom-footer{width:100%; padding:30px 0; background:var(--dark); border-top:1px solid #fff3}
+.bottom-footer p{color:var(--light); font-size:15px; font-weight:200; margin:0; padding:0;}
+.bottom-footer p a{color:var(--main); font-weight:500; transition:.5s;}
+.bottom-footer p a:hover{text-decoration:none;}
+/* Footer Close */
+
+/* Search Bar */
+.search-container{position:fixed; top:0; left:0; width:100%; height:100%; background:var(--dark); z-index:10; display:none;}
+.search-container #search-close{position:absolute; right:30px; top:30px; width:40px; height:40px; line-height:40px; text-align:center; background:var(--main); color:var(--light); outline:none !important;}
+.search-container .main{margin-top:150px;}
+.search-container .main h5{font-size:20px; font-weight:500; color:#cecece;}
+.search-container .main .box{padding:20px; border-radius:5px; background:var(--light);}
+.search-container .main .box h6{font-size:20px; font-weight:700; color:var(--dark);}
+.search-container .main .box p{font-size:17px; font-weight:500; color:var(--dark);}
+.search-container .main .box a{background:var(--main); color:var(--light); padding:10px 25px; display:inline-block; margin-top:15px; border-radius:2px;}
+.search-container .main form{width:100%; border-radius:2px; overflow:hidden; display:flex; padding:0; background:var(--main); margin-top:15px;}
+.search-container .main form input{padding:15px; margin:0; background:var(--light); color:var(--dark); border:none; outline:none; border-radius:0; width:100%;}
+.search-container .main form button{padding:15px; background:var(--main); color:var(--light); border-radius:0; width:50px;}
+/* Search Bar ~ Close */
+
+/* Home Page */
+.home-banner{width:100%; background:url(../images/banner/home-banner.jpg); background-attachment:fixed; background-size:cover; background-position:center; padding:var(--ptb100);}
+.home-banner .box{background:#ffffffd9; padding:20px;}
+.home-banner .box h2{font-family:var(--dancing-script); color:var(--main); font-size:35px;}
+.home-banner .box p{font-size:17px; font-weight:300; color:var(--dark); margin-top:15px;}
+.home-banner .box a{background:var(--main); color:var(--light); padding:10px 25px; display:inline-block; margin-top:15px; border-radius:2px;}
+
+.category-list{width:100%; background:var(--light); padding:var(--ptb70);}
+.category-list .heading{text-align:center; margin-bottom:50px;}
+.category-list .heading h4{font-size:25px; font-family:var(--dancing-script); color:var(--main); margin-bottom:10px; text-transform:capitalize;}
+.category-list .heading h3{font-size:35px; font-family:var(--poppins); color:var(--dark); font-weight:700; text-transform:capitalize;}
+.category-list .box{width:100%; position:relative; overflow:hidden; margin:15px 0;}
+.category-list .box:hover > .image img{transform:scale(1.1)}
+.category-list .box .image{position:relative; top:0; left:0; width:100%;}
+.category-list .box .image img{width:100%; transition:.5s;}
+.category-list .box a h6{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:3; width:130px; height:130px; text-align:center; border-radius:50%; line-height:130px; background:#0f1221d6; color:var(--light); text-transform:uppercase;}
+.category-carousel .owl-nav button{width:40px; height:40px; line-height:40px; text-align:center; background:var(--main) !important; color:var(--light) !important; outline:none !important;}
+
+
+.submit-recipe{width:100%; padding:var(--ptb100); background:url(../images/banner/submit-recipe.jpg); background-attachment:fixed; background-size:cover; background-position:center;}
+.submit-recipe .box{width:100%; padding:20px; text-align:center; background:#ffffffd9;}
+.submit-recipe .box h5{font-size:25px; font-family:var(--dancing-script); color:var(--main); margin-bottom:10px; text-transform:capitalize;}
+.submit-recipe .box h2{font-size:35px; font-family:var(--poppins); color:var(--dark); font-weight:700; text-transform:capitalize;}
+.submit-recipe .box p{font-size:17px; font-weight:300; color:var(--dark); margin:25px;}
+.submit-recipe .box a{background:var(--main); color:var(--light); padding:10px 25px; display:inline-block; margin-top:15px; border-radius:2px;}
+
+.recipe-list{width:100%; background:var(--light); padding:var(--ptb70);}
+.recipe-list .heading{text-align:center; margin-bottom:50px;}
+.recipe-list .heading h4{font-size:25px; font-family:var(--dancing-script); color:var(--main); margin-bottom:10px; text-transform:capitalize;}
+.recipe-list .heading h3{font-size:35px; font-family:var(--poppins); color:var(--dark); font-weight:700; text-transform:capitalize;}
+.recipe-list .box{width:100%; position:relative; overflow:hidden; border-radius:2px; margin:15px 0;}
+.recipe-list .box .image{width:100%; position:relative; overflow:hidden;}
+.recipe-list .box .image img{width:100%;}
+.recipe-list .box .image button{position:absolute; top:10px; right:10px; background:var(--main); color:var(--light); width:40px; height:40px; line-height:40px; text-align:center; border-radius:40px; outline:none !important; border:none;}
+.recipe-list .box .image:hover > a{display:block;}
+.recipe-list .box .image a{width:100%; display:none; position:absolute; bottom:0; text-align:center; padding:10px; background:var(--main); color:var(--light); animation:.5s recipeBox; font-size:15px; font-weight:400;}
+@keyframes recipeBox{
+	from{bottom:-50px;}
+	to{bottom:0;}
+}
+.recipe-list .box .text{width:100%; background:var(--dark); padding:20px; text-transform:capitalize;}
+.recipe-list .box .text h4 a{font-size:20px; font-weight:300; color:var(--light); font-family:var(--poppins); text-transform:capitalize;}
+.recipe-list .box .text hr{background:#fff3; margin:20px 0;}
+.recipe-list .box .text p{font-size:15px; font-weight:400; color:#c2c2c2;}
+.recipe-list .box .text p a{color:var(--main); transition:.5s;}
+.recipe-list .box .text .tags span{font-size:15px; font-weight:400; color:#c2c2c2;}
+.recipe-list .box .text .tags span:after{content:'|'; display:inline-block; margin:0 20px;}
+.recipe-list .box .text .tags span:last-child:after{display:none;}
+.recipe-list .box .text .tags span i{margin-right:5px;}
+.recipe-list .box .text .tags span a{color:var(--main);}
+.recipe-list .recipe-button{background:var(--main); color:var(--light); padding:15px 25px; display:block; margin:30px auto 0; border-radius:2px; width:200px; text-align:center; text-transform:capitalize;}
+
+.recipe-pagination{margin-top:25px;}
+.recipe-pagination .page-link.active{color:var(--light); background:var(--main); border-color:var(--main);}
+.recipe-pagination .page-link{padding:10px 20px; color:var(--main);}
+.recipe-pagination .page-link:hover{color:var(--light); background:var(--main); border-color:var(--main);}
+/* Home Page ~ Close */
+
+
+/* Page */
+.page-title{width:100%; padding:var(--ptb100); background:url(../images/banner/page-title.jpg); background-size:cover; background-attachment:fixed; background-position:center;}
+.page-title h1{font-size:50px; color:var(--light); font-family:var(--lobster); text-transform:capitalize; text-align:center;}
+
+.about-section{background:var(--light); padding:var(--ptb70); width:100%; text-align:center;}
+.about-section img{width:300px; margin:0 auto 30px;}
+.about-section p{font-size:17px; font-weight:300; color:var(--dark); margin-bottom:15px;}
+.about-section p:last-child{margin:0;}
+
+.quotes{width:100%; background:var(--light); padding:var(--ptb50);}
+.quotes .box{width:100%; margin:15px 0;}
+.quotes .box img{width:100%;}
+
+.news{width:100%; background:var(--light); padding:var(--ptb50);}
+.news .card{background:var(--dark); border:none; margin:15px 0;}
+.news .card h5 a{font-size:20px; font-weight:500; color:var(--light); font-family:var(--poppins); text-transform:capitalize;}
+.news .card p{font-size:15px; font-weight:400; color:#cecece;}
+.news .card a{color:var(--main);}
+.news .card .card-footer{border-top:1px solid #ffffff61; color:var(--light);}
+.news .card .card-footer a{color:var(--light);}
+
+.category-box{width:100%; padding:var(--ptb70); background:radial-gradient(#0b081f, #000000);}
+.category-box img{width:100%; padding:5px; background:var(--light);}
+.category-box h1{font-size:35px; font-weight:500; font-family:var(--lobster); color:var(--main); margin:20px 0;}
+.category-box p{color:#cecece; font-size:17px; font-weight:300;}
+
+.recipe-box{width:100%; padding:var(--ptb70); background:radial-gradient(#0b081f, #000000);}
+.recipe-box img{width:100%; padding:5px; background:var(--light);}
+.recipe-box h1{font-size:35px; font-weight:500; font-family:var(--lobster); color:var(--main); margin:0 0 20px 0;}
+.recipe-box p{color:#cecece; font-size:15px; font-weight:300;}
+.recipe-box p a{color:#cecece; transition:.5s;}
+.recipe-box p a:hover{color:var(--light);}
+.recipe-box p i{color:var(--light);}
+
+.recipe-container{width:100%; background:var(--light); padding:var(--ptb70);}
+
+
+
+/* Page ~ Close */
+
+/* Users */
+.sign{padding:var(--ptb70); width:100%; background:#f2f8ff;}
+.sign .form-container{width:100%; background:var(--light); padding:30px; border-radius:2px; box-shadow:0 5px 10px 0 #0002;}
+.sign .form-container h1{font-size:40px; font-weight:500; color:var(--main); font-family:var(--dancing-script); text-align:center;}
+.sign .form-container form{width:100%; margin:50px 0 30px 0;}
+.sign .form-container form input{width:100%; padding:13px 15px; background:var(--light); border-radius:2px; margin-bottom:10px; font-size:15px; border:1px solid #0003; transition:.5s;}
+.sign .form-container form input:focus{border-color:var(--main);}
+.sign .form-container form input[type=checkbox]{width:auto;}
+.sign .form-container form label{font-size:15px; font-weight:300; color:var(--dark);}
+.sign .form-container form button{padding:10px 25px; background:var(--main); color:var(--light); border-radius:2px; display:block; margin-top:15px;}
+.sign .form-container p{color:var(--dark); margin:0 0 10px; padding:0; text-transform:capitalize; font-size:15px; font-weight:300;}
+.sign .form-container p a{color:var(--main); font-weight:400;}
+
+
+
+/* Users ~ Close */
